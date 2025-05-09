@@ -11,7 +11,7 @@ public interface IGenericDAO<T> {
     void delete(Object id);
     long count();
     long getCountByCriteria(Map<String, Object> criteria);
-    Optional<T> getByID(Object id);
+    Optional<T> getById(Object id);
     Optional<T> findByField(String fieldName, Object value);
     List<T> getAll();
     List<T> getByCriteria(Map<String, Object> criteria);
